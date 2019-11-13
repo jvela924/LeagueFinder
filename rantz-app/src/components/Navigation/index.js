@@ -11,7 +11,7 @@ const Navigation = () => (
       {authUser =>
         authUser ? <NavigationAuth /> : <NavigationNonAuth />
       }
-    </AuthUserContext.Consumer>  
+    </AuthUserContext.Consumer>
   </div>
 )
 
@@ -25,6 +25,9 @@ const NavigationAuth = () => (
       </li>
       <li>
         <Link to={ROUTES.ACCOUNT}>Account</Link>
+      </li>
+      <li>
+        <Link to={ROUTES.ADMIN}>Admin</Link>
       </li>
       <li>
         <SignOutButton />
